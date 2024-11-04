@@ -1,29 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    <h1 id="secret-info">my secret info</h1>
-    <input id="delete-confirm" type="text" placeholder="please type delete">
+  </head>
+  <body>
+    <!-- <h1 id="secret-info">my secret info</h1>
+    <input id="delete-confirm" type="text" placeholder="please type delete" />
     <button id="btn-delete" disabled>delete</button>
     <script>
-        document.getElementById('delete-confirm').addEventListener('keyup',function(event){
-            const text = event.target.value;
-            const deletebutton = document.getElementById('btn-delete')
-            if(text==='delete'){
-             deletebutton.removeAttribute('disabled')
-            }
-            else{
-                deletebutton.setAttribute('disabled',true)
-            }
-        })
-        document.getElementById('btn-delete').addEventListener('click',function(){
-        const secret = document.getElementById('secret-info');
-        secret.style.display = 'none';
-        })
-    </script>
-</body>
+      document
+        .getElementById("delete-confirm")
+        .addEventListener("keyup", function (event) {
+          const text = event.target.value;
+          const deleteButton = document.getElementById('btn-delete')
+          if(text==='delete'){
+           deleteButton.removeAttribute('disabled')
+          }
+          else{
+              deleteButton.setAttribute('disabled',true)
+          }
+        });
+      document
+        .getElementById("btn-delete")
+        .addEventListener("click", function () {
+          const secret = document.getElementById("secret-info");
+          secret.style.display = "none";
+        });
+    </script> -->
+
+
+
+<h1 id="car">I love this car, her name is Koenigsegg Agera</h1>
+<br>
+<input type="text" name="" id="input" placeholder="type the text delete">
+<button id="deletes" disabled>delete</button>
+<script>
+  
+  document.getElementById('input').addEventListener('keyup',function(event){
+    const text= event.target.value;
+    const deleteButton= document.getElementById('deletes')
+    if(text==='delete'){
+        deletes.removeAttribute('disabled');
+    }
+    else{
+        deletes.setAttribute('disabled',true);
+    }
+  })
+
+  document.getElementById('deletes').addEventListener('click',function(){
+   const cars = document.getElementById('car');
+   cars.style.display='none';
+  })
+
+</script>
+  </body>
 </html>
