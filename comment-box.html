@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- <h1>please add your comment</h1>
+    <div>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore nisi eligendi nobis consequatur pariatur odio sequi aliquid totam nihil quisquam nesciunt autem deleniti facilis fugiat, perferendis nulla magni quo. Numquam tempora architecto ratione eligendi nesciunt, accusantium illo maxime, vero ex laudantium ipsa nostrum doloribus aliquam, autem blanditiis necessitatibus consequatur beatae. Laborum dolor quia corporis velit officia? Quod aut corrupti ad autem illum. Neque asperiores cumque nulla id perferendis. Doloribus earum recusandae aliquid fugiat, deleniti qui odit nam ut mollitia nulla!
+      </p>
+
+      
+      <div>
+        <div id="comment-container"></div>
+        <textarea name="" id="new-comment" cols="60" rows="5"></textarea>
+        <br />
+        <button id="btn-post">post</button>
+      </div>
+    </div>
+    <script>
+      //step-1:add event listener to the post button
+      document.getElementById("btn-post").addEventListener("click", function(){
+          //step-2:get the comment inside the textarea
+          const commentBox = document.getElementById("new-comment");
+          const newComment = commentBox.value;
+
+          //step-3:set the comment inside the comment container
+          //1.get the comment container
+          //2.create a new element (p tag)
+          //3.set the text of the comment as innertext of the p tag
+          //add the p tag using appendchild
+          //
+
+          const commentContainer = document.getElementById("comment-container");
+          const p = document.createElement("p");
+          p.innerText = newComment;
+          commentContainer.appendChild(p);
+          //step-4: clear the text area
+      const h = document.createElement('h1');
+      h.innerText='The name is who ?';
+      commentContainer.appendChild(h)
+          commentBox.value = "";
+        });
+    </script> -->
+
+
+
+
+
+   <div>
+    <h1 style="font-size: 60px;">My favourite car name is :: Koenigsegg Agera</h1>
+   <h3>i again say koenigsegg Agera</h3>
+   <br>
+   <br>
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus pariatur officia eligendi, adipisci non odit distinctio libero dignissimos hic quidem vitae facere sunt tenetur quisquam possimus ipsa esse magnam a asperiores ut iure incidunt suscipit error accusamus! Architecto rerum inventore repellat fugit ut quaerat deserunt, assumenda quibusdam rem optio recusandae, minus a iure at ad delectus voluptatibus nesciunt, est eos? Quam quod harum a corporis necessitatibus laborum nostrum corrupti commodi, veritatis delectus natus incidunt nihil ullam. Ipsum ut maxime molestias non accusantium aperiam consequatur corrupti similique, explicabo ad. Inventore modi impedit natus rem! Ex magni ipsum accusantium reiciendis aliquid error.</p>
+
+   </div>
+<div>
+  <br>
+  <div id="newtext">
+
+  </div>
+<textarea name="" id="text" cols="90px" rows="18px"></textarea>
+<br>
+<button id="post">post it</button>
+
+</div>
+<script>
+  document.getElementById('post').addEventListener('click',function(){
+     const text = document.getElementById('text');
+     const textar = text.value;
+
+     const newcomment = document.getElementById('newtext');
+     const p = document.createElement('p')
+      p.innerText=textar;
+     newcomment.appendChild(p)
+     text.value='';
+  })
+
+</script>
+  </body>
+</html>
